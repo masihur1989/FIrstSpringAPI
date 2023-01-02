@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  postgres:
+    image: "postgres:latest"
+    restart: always
+    environment:
+      - POSTGRES_USER=spring
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5430:5432"
